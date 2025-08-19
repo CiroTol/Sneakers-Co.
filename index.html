@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers & Co. - Tu tienda de zapatillas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <i class="fas fa-running"></i> Sneakers & Co.
+                </a>
+
+
+                <div class="collapse navbar-collapse" id="menuMobile">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item">
+                            <button class="dark-mode-toggle me-3" onclick="oscuro()">
+                                <i class="fas fa-moon" id="theme-icon"></i>
+                                <span id="theme-text">Oscuro</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section class="hero-section" id="inicio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>Las mejores zapatillas están acá</h1>
+                        <p>Descubre nuestra colección exclusiva de las marcas más prestigiosas del mundo. Nike, Adidas,
+                            Vans y más.</p>
+                        <a href="#productos" class="btn btn-hero btn-lg">
+                            <i class="fas fa-arrow-down"></i> Explorar productos
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <i class="fas fa-shoe-prints" style="font-size: 8rem; opacity: 0.3;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <br>
+    <section>
+        <div id="brandCarousel" class="carousel slide carousel-container" data-bs-ride="carousel"
+            data-bs-interval="6000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a target="_blank" href="https://www.adidas.com.ar/">
+                        <img src="Imagenes/Adidas.avif" alt="Adidas Sneakers">
+                    </a>
+                    <div class="carousel-caption d-md-block">
+                        <h3><strong>ADIDAS</strong></h3>
+                        <p class="mb-0">Impossible is Nothing - Tradición alemana en calzado deportivo</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <a target="_blank" href="https://www.nike.com/es/">
+                        <img src="Imagenes/Nike.avif" alt="Nike Sneakers">
+                    </a>
+                    <div class="carousel-caption d-md-block">
+                        <h3><strong>NIKE</strong></h3>
+                        <p class="mb-0">Just Do It - Innovación y rendimiento deportivo de clase mundial</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <a target="_blank" href="https://www.vans.com.ar/">
+                        <img src="Imagenes/Vans.jpg" alt="Vans Sneakers">
+                    </a>
+                    <div class="carousel-caption d-md-block">
+                        <h3><strong>VANS</strong></h3>
+                        <p class="mb-0">Off The Wall - Cultura skate y estilo urbano auténtico</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <i class="fas fa-shipping-fast feature-icon"></i>
+                        <h4>Envío Gratis</h4>
+                        <p>En compras mayores a $150.000. Recibí tus zapatillas en 72hs habiles.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <i class="fas fa-undo feature-icon"></i>
+                        <h4>30 días de garantía</h4>
+                        <p>Si no estás satisfecho, devolvenos el producto sin preguntas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <i class="fas fa-certificate feature-icon"></i>
+                        <h4>100% Originales</h4>
+                        <p>Todas nuestras zapatillas son originales y con garantía oficial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="brand-filter text-center">
+
+            <section class="productos" id="productos">
+                <h2>Nuestros productos</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12  col-md-6 col-lg-3 ">
+                            <div class="card" style="width: 18rem; margin: 10px;">
+                                <img src="Imagenes/J4BC.png" class="card-img-top" alt="Jordan 4 Black Cat">
+                                <div class="card-body">
+                                    <h5 class="card-title">Air Jordan</h5>
+                                    <p class="card-text">Este diseño fue creado por Nike en colaboración con el propio
+                                        jugador, quien en ese momento era una estrella emergente de la NBA.</p>
+                                    <a href="https://www.nike.com.ar/hombre/zapatillas/jordan?page=2"
+                                        class="btn btn-primary">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-md-6 col-lg-3 ">
+                            <div class="card" style="width: 18rem; margin: 10px;">
+                                <img src="Imagenes/NDP.webp" class="card-img-top" alt="Nike Dunk Panda">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dunk</h5>
+                                    <p class="card-text"> Las zapatillas de baloncesto, como las Legend de 1984, las
+                                        Terminator del 85 y las Jordan 1 del 85, se combinaron para crear las Dunk.</p>
+                                    <a href="https://www.nike.com.ar/hombre/zapatillas/dunk" class="btn btn-primary">Ver
+                                        mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-md-6 col-lg-3 ">
+                            <div class="card" style="width: 18rem; margin: 10px;">
+                                <img src="Imagenes/NAF1.png" class="card-img-top" alt="Nike Air Force 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Air Force 1</h5>
+                                    <p class="card-text">Antes de que se lanzaran las AF1, las zapatillas de baloncesto
+                                        eran
+                                        extremadamente básicas. Se solían llevar con tres, cuatro y hasta cinco pares de
+                                        calcetines para suavizar los saltos sobre el cemento.</p>
+                                    <a href="https://www.nike.com.ar/hombre/zapatillas/air-force"
+                                        class="btn btn-primary">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12  col-md-6 col-lg-3 ">
+                            <div class="card" style="width: 18rem; margin: 10px; ">
+                                <img src="Imagenes/NM9.png" class="card-img-top" alt="Nike Metcon 9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Training</h5>
+                                    <p class="card-text">Nike Training se ha convertido en un referente mundial en el
+                                        ámbito
+                                        del entrenamiento deportivo. Sus zapatillas, diseñadas para ofrecer máximo
+                                        rendimiento y comodidad, incorporan tecnología de vanguardia.</p>
+                                    <a href="https://www.nike.com.ar/hombre/zapatillas/deportivas"
+                                        class="btn btn-primary">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="stats-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="stat-item">
+                                <span class="stat-number">10,000+</span>
+                                <span>Clientes Satisfechos</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span>Modelos Disponibles</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="stat-item">
+                                <span class="stat-number">15</span>
+                                <span>Marcas Exclusivas</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="stat-item">
+                                <span class="stat-number">5</span>
+                                <span>Años de Experiencia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="nosotros-section" id="nosotros">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h2>Sobre Nosotros</h2>
+                            <p class="lead">Somos una empresa familiar con más de 5 años de experiencia en la venta de
+                                zapatillas premium.</p>
+                            <p>Nos especializamos en traerte las últimas tendencias y los modelos más exclusivos de las
+                                mejores marcas del mundo. Nuestra pasión por el calzado deportivo y urbano nos ha
+                                convertido
+                                en referentes en Argentina.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-warning"></i> Productos 100% originales</li>
+                                <li><i class="fas fa-check text-warning"></i> Atención personalizada</li>
+                                <li><i class="fas fa-check text-warning"></i> Envíos a todo el país</li>
+                                <li><i class="fas fa-check text-warning"></i> Garantía extendida</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=500&h=300&fit=crop"
+                                alt="Nuestra tienda" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main> <br>
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h3>¡Suscribite a nuestro newsletter!</h3>
+                    <p class="mb-4">Recibí las últimas novedades y ofertas exclusivas.</p>
+                    <div class="input-group input-group-lg">
+                        <iframe id="formulario" src="https://docs.google.com/forms/d/e/1FAIpQLSeKXigF-OIFn5Ems176YlCmL0XvCvAQFKGJAvPD-wf7uYOZJQ/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <br>
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h5><i class="fas fa-running"></i> Sneakers & Co.</h5>
+                    <p>Tu tienda de confianza para las mejores zapatillas. Calidad, autenticidad y estilo en un solo
+                        lugar.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Enlaces</h6>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Categorías</h6>
+                    <ul class="footer-links">
+                        <li><a href="https://www.nike.com/es/w/hombre-running-zapatillas-37v7jznik1zy7ok">Running</a>
+                        </li>
+                        <li><a
+                                href="https://www.nike.com/es/w/hombre-baloncesto-zapatillas-3glsmznik1zy7ok">Basketball</a>
+                        </li>
+                        <li><a href="https://www.vans.com.ar/classics">Casual</a></li>
+                        <li><a href="https://www.adidas.com.ar/zapatillas-training-hombre">Training</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Contacto</h6>
+                    <p><i class="fas fa-phone"></i> +54 11 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> info@sneakersco.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <button id="copyright" onclick="copyright()">&copy; 2025 Sneakers & Co. Todos los derechos
+                        reservados.</button>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="terminos.html" class="text-blue me-3">Términos y Condiciones</a>
+                    <a href="privacidad.html" class="text-blue">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
